@@ -1,4 +1,4 @@
-package lexical;
+package src.lexical;
 
 public enum Tag {
 
