@@ -1,9 +1,48 @@
 package lexical;
 
-public class Tag {
-  
-  public static void main(String args[]) {
-    System.out.println("Hello Mourao");
-  }
-
+public enum Tag {
+    // Key words
+    START,
+    EXIT,
+    INT,
+    FLOAT,
+    STRING,
+    IF,
+    THEN,
+    ELSE,
+    END,
+    DO,
+    WHILE,
+    SCAN,
+    PRINT,
+    NOT,
+    OR,
+    AND,
+    // Operators
+    ATTR,
+    ADD,
+    MINUS,
+    MULT,
+    DIV,
+    GREATER_THAN,
+    LESS_THAN,
+    GREATER_THAN_OR_EQUAL,
+    LESS_THAN_OR_EQUAL,
+    GREATER_LESS,
+    COMPARATOR,
+    // Symbols
+    OPEN_BRACE,
+    CLOSE_BRACE,
+    OPEN_BRACKET,
+    CLOSE_BRACKET,
+    OPEN_PARENTHESIS,
+    CLOSE_PARETHESIS,
+    SEMICOLON,
+    COLON,
+    DOT,
+    // Others
+    CONST_INT,
+    CONST_FLOAT,
+    LITERAL,
+    ID,
 }
