@@ -181,14 +181,14 @@ public class LexicalAnalyser {
 			getNextChar();
 			return token;
 		// Handle string literals
-		case ('“'):
+		case ('\"'):
 			StringBuffer sb = new StringBuffer();
-			for (getNextChar(); c != '”' && !eof; getNextChar()) {
+			for (getNextChar(); c != '\"' && !eof; getNextChar()) {
 				sb.append(c);
 			}
 			// If dont close string literal, throw error
 			if (eof) {
-				throw new Exception("ERROR (line " + line + "): Excpected '”' to close literal.");
+				throw new Exception("ERROR (line " + line + "): Excpected '\"' to close literal.");
 			}
 			// Else, set literal token
 			String tokenValue = sb.toString();
